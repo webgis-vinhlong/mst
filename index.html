@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b57d0">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Tra cứu mã số thuế, hồ sơ doanh nghiệp, người đại diện, địa chỉ và ngành nghề kinh doanh tại Việt Nam.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Tra cứu mã số thuế & doanh nghiệp Việt Nam | MST">
+  <meta property="og:description" content="Tra cứu hồ sơ doanh nghiệp, mã số thuế và ngành nghề kinh doanh trên giao diện tối ưu cho desktop và mobile.">
+  <meta property="og:url" content="https://webgis-vinhlong.github.io/mst/">
+  <link rel="canonical" href="https://webgis-vinhlong.github.io/mst/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b57d0'/%3E%3Cpath d='M18 18h28v8H18zm0 12h28v8H18zm0 12h18v8H18z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Tra cứu mã số thuế & doanh nghiệp Việt Nam | MST</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="./" aria-label="MST - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>MST</span>
+      </a>
+      <div class="source-note">Tra cứu doanh nghiệp Việt Nam</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="eyebrow">Công cụ tra cứu mở</div>
+        <h1 id="page-title">Tra cứu mã số thuế & hồ sơ doanh nghiệp</h1>
+        <p class="hero-copy">Tìm theo mã số thuế, tên doanh nghiệp hoặc người đại diện. Kết quả trình bày đầy đủ thông tin doanh nghiệp và danh sách ngành nghề kinh doanh.</p>
+
+        <form id="searchForm" class="search-panel" role="search">
+          <label class="sr-only" for="keyword">Mã số thuế, tên doanh nghiệp hoặc người đại diện</label>
+          <div class="search-field">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="keyword" name="q" type="search" autocomplete="off" inputmode="search" placeholder="Ví dụ: 4101695482 hoặc Công Ty TNHH Điện Phát Xanh">
+            <button id="clearSearch" class="clear-search" type="button" aria-label="Xóa từ khóa">×</button>
+          </div>
+          <button id="searchBtn" class="btn btn-primary" type="submit">Tra cứu</button>
+        </form>
+
+        <div class="examples">
+          <span>Tra cứu nhanh:</span>
+          <button class="example-chip" type="button" data-query="4101695482">4101695482</button>
+          <button class="example-chip" type="button" data-query="Công Ty TNHH Điện Phát Xanh">Điện Phát Xanh</button>
+        </div>
+
+        <div class="notice">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v4m0 4h.01M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>Đây là công cụ tra cứu tham chiếu, không phải cổng thông tin chính thức của cơ quan nhà nước. Thời điểm cập nhật và phạm vi dữ liệu phụ thuộc nguồn dữ liệu.</span>
+        </div>
+      </section>
+
+      <section id="statusRegion" class="status-region" aria-live="polite" aria-atomic="true"></section>
+      <section id="resultsRegion" aria-live="polite"></section>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="shell">
+    <strong>MST</strong> · Dự án mở của <a href="https://github.com/webgis-vinhlong/mst" target="_blank" rel="noopener noreferrer">webgis-vinhlong</a>. Dữ liệu tham chiếu qua API công khai của <a href="https://topmst.com" target="_blank" rel="noopener noreferrer">TopMST</a>. Hãy đối chiếu nguồn chính thức khi dùng cho nghiệp vụ pháp lý, thuế hoặc hợp đồng.
+  </footer>
+
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
