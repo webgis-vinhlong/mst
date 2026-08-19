@@ -1,0 +1,9 @@
+name = "mst-geovina-proxy"
+main = "geovina-proxy.js"
+compatibility_date = "2026-08-19"
+
+[vars]
+ALLOWED_ORIGIN = "https://webgis-vinhlong.github.io"
+
+# Store the API key as a secret, never here:
+# npx wrangler secret put GEOVINA_API_KEY
